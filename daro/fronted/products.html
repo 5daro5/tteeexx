@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Интернет-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Магазин</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="products.html" class="nav-link active">Товары</a>
+                <a href="login.html" class="nav-link" id="loginLink">Войти</a>
+                <a href="dashboard.html" class="nav-link" id="dashboardLink" style="display: none;">Кабинет</a>
+                <button id="logoutBtn" class="btn-secondary" style="display: none;">Выйти</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h2 class="page-title">Все товары</h2>
+            
+            <div class="filters-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Поиск товаров..." onkeyup="filterProducts()">
+                </div>
+                <div class="sort-options">
+                    <select id="sortSelect" onchange="loadProducts()">
+                        <option value="newest">Сначала новые</option>
+                        <option value="price_asc">Цена по возрастанию</option>
+                        <option value="price_desc">Цена по убыванию</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="productsList" class="products-grid">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="reviewsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeReviewsModal()">&times;</span>
+            <h3>Отзывы о товаре</h3>
+            <div id="reviewsList" class="reviews-list">
+            </div>
+            <div id="noReviews" style="display: none; text-align: center; color: #6c757d;">
+                Пока нет отзывов для этого товара
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Магазин красоты - Главная</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="decorative-circle"></div>
+    <div class="decorative-circle"></div>
+    <div class="decorative-circle"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Магазин Красоты</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="products.html" class="nav-link">Товары</a>
+                <a href="login.html" class="nav-link" id="loginLink">Войти</a>
+                <a href="dashboard.html" class="nav-link" id="dashboardLink" style="display: none;">Кабинет</a>
+                <button id="logoutBtn" class="btn-secondary" style="display: none;">Выйти</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <h2 class="hero-title">Добро пожаловать в мир красоты</h2>
+                <p class="hero-description">Откройте для себя лучшие косметические товары по доступным ценам с быстрой доставкой</p>
+                <button class="btn-primary" onclick="location.href='products.html'">Исследовать коллекцию</button>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h3 class="page-title">Почему выбирают нас</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h4>Быстрая доставка</h4>
+                        <p>Доставка в день заказа. Бесплатная доставка при заказе от 2000₽</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h4>Гарантия качества</h4>
+                        <p>Все товары проходят строгий контроль качества. Только сертифицированная продукция</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h4>Поддержка 24/7</h4>
+                        <p>Круглосуточная поддержка наших клиентов. Помощь в подборе косметики</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h4>Подарки и акции</h4>
+                        <p>Регулярные акции и подарки за покупки. Накопительная система скидок</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-preview-section">
+            <div class="container">
+                <h3 class="page-title">Популярные товары</h3>
+                <div class="products-preview-grid">
+                    <div class="preview-product-card">
+                        <div class="preview-product-icon"></div>
+                        <h4>Декоративная косметика</h4>
+                        <p>Помады, тени, тональные средства от лучших брендов</p>
+                    </div>
+                    <div class="preview-product-card">
+                        <div class="preview-product-icon"></div>
+                        <h4>Уход за кожей</h4>
+                        <p>Кремы, сыворотки, средства для очищения и увлажнения</p>
+                    </div>
+                    <div class="preview-product-card">
+                        <div class="preview-product-icon"></div>
+                        <h4>Уход за волосами</h4>
+                        <p>Шампуни, маски, стайлинговые средства для любых типов волос</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Магазин Красоты. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
